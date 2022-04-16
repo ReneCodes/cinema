@@ -1,0 +1,124 @@
+
+/* ------- STYLE FOR Smartphone ------- */
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 350px;
+  height: 600px;
+  margin: auto;
+  border: 16px solid var(--color-grey-800);
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-grey-400);
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: var(--color-grey-400);
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 350px;
+  height: 600px;
+  background: var(--color-white-100);
+}
+/* location info style */
+.city{
+  background-color: var(--color-blue-900);
+}
+.city h1{
+  margin: 0;
+  padding: 10px;
+  color: var(--color-yellow-600);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+
+}
+
+
+/* ------- STYLE FOR MAP ------- */
+iframe{
+  overflow: hidden;
+  margin: auto;
+}
+
+/* create 2 containers for content */
+#location_map {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  text-align: center;
+
+  max-width: 1000px;
+}
+
+/* ------- STYLE FOR LOCATION INFO ------- */
+
+.contact_info{
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+
+.info_cinema{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-grey-800);
+}
+
+.contactbtn{
+  width: max-content;
+  margin: auto;
+}
+
+.contact_us{
+  text-decoration: none;
+  color: var(--color-grey-800);
+}
+
+.contactbtn_email{
+  font-weight: 300;
+  text-transform: lowercase;
+
+}
+
+/* style for button */
+.contactbtn_item{
+  background-color: var(--color-yellow-600);
+  border-radius: 6px;
+  padding: 8px;
+  letter-spacing: 2px;
+
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contactbtn_item:hover{
+  background-color: var(--color-blue-900);
+  color: var(--color-white-100);
+}

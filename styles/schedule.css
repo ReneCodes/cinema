@@ -1,0 +1,143 @@
+
+/* -----STYLE FOR SCHEDULE----- */
+
+#logo_header{
+  background-color: var(--color-white-100);
+}
+
+#logo_header img{
+  opacity: 40%;
+}
+
+#logo_header img:hover{
+  opacity: 100%;
+}
+
+.movie{
+  margin-bottom: 40px;
+}
+
+.schedule_box{
+  max-width: fit-content;
+  margin: auto;
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 110px 84px 84px 84px 84px 84px 84px 86px;
+  grid-template-rows: auto auto;
+  width: fit-content;
+}
+
+.grid-container > div {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  height: max-content;
+}
+
+
+.item{
+  text-align: center;
+}
+
+div > a{
+  text-decoration: none;
+}
+
+.item > h1,
+.item > h2,
+.item > p{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.item >p{
+  font-size: x-small;
+}
+
+
+.item_poster img{
+  padding-right: 2px;
+  margin-top: 6px;
+  width: 98%;
+}
+
+.movie-title p{
+  padding: 4px 0;
+  margin: 0%;
+
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  
+  background-color: var(--color-blue-900);
+  color: var(--color-yellow-600);
+}
+
+/* -----FLIPCARD DESIGN----- */
+
+
+.flip-card {
+  background-color: transparent;
+  width: 80px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  left: 2px;
+  top: 1px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: var(--color-blue-900);
+  color: var(--color-white-100);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 40% 0;
+  height: auto;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--color-yellow-600);
+  
+  transform: rotateY(180deg);
+  
+  font-size: 20px;
+  font-weight: 600;
+  height: auto;
+  text-decoration: none;
+}
+
+.flip-card-back-text{
+  color: var(--color-grey-800);
+  padding: 40% 0;
+
+}

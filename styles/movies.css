@@ -1,0 +1,137 @@
+
+body{
+  min-width: 1060px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  
+} 
+
+main ul {
+  gap: 24px 24px;
+  min-width: 1080px;
+  max-width: min-content;
+
+  margin: 30px auto 48px auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.wrapper{
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper_item {
+  display: flex;
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: min-content;
+  max-height: 280px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* -----STYLE THE CARD----- */
+
+.trailer_box{
+  display: flex;
+  max-width: 220px;
+}
+
+.trailer{
+  color: var(--color-white-100);
+  background-color: var(--color-blue-900);
+  font-size: 18px;
+  padding-bottom: 16px;
+  text-align: center;
+
+}
+
+.trailer:hover{
+  background-color: var(--color-yellow-600);
+  color: var(--color-grey-800);
+
+}
+
+.trailer img {
+  width: 150px;
+  /* margin-bottom: 8px; */
+}
+
+li a {
+  color: var(--color-blue-400);
+  text-decoration: none;
+}
+
+.item_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%
+}
+
+.item_title{
+  background-color: var(--color-blue-900);
+}
+
+.item_title h3{
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 10px 16px;
+  color: var(--color-yellow-600);
+  font-size: 22px;
+}
+
+
+.item_policy p{
+  text-transform: capitalize;
+  font-size: 10px;
+  margin: 10px 8px 0 16px;
+}
+
+.item_genre p{
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 8px 0 16px;
+}
+
+.item_language p{
+  font-size: 14px;
+  margin: 10px 0 0 16px;
+}
+
+.item_runtime p{
+  font-size: 14px;
+
+  font-weight: 600;
+  margin: 10px 0 0 16px;
+}
+
+/* -----STYLE LINKS OF THE CARD----- */
+
+ .item_content_links{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+}
+
+.item_content_links a{
+  color: var(--color-blue-900);
+  width: 100%;
+  padding: 5px;
+  margin-left: 16px;
+ }
+
+ .item_content_links a:hover{
+  background-color: var(--color-blue-900);
+  color: var(--color-white-100);
+ }

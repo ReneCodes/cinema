@@ -1,0 +1,125 @@
+form {
+  width: 600px;
+  background-color: var(--color-white-100);
+  padding: 20px;
+  margin: 1.5rem auto;
+  color: var(--color-grey-800);
+}
+
+h2 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+span {
+  color: var(--color-red-600);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  color: var(--color-grey-400);
+}
+
+input,
+textarea,
+select {
+  display: block;
+  font: inherit;
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid var(--color-grey-400);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+
+  color: var(--color-grey-800);
+
+  /* resize only used for textarea */
+  resize: vertical;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid var(--color-grey-400);
+  color: var(--color-blue-700);
+  box-shadow: 0 0 0 3px var(--color-blue-700);
+}
+
+.form-reply-inline,
+.form-terms-inline {
+  display: flex;
+}
+
+.form-reply-inline input{
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.form-terms-inline {
+  margin-top: 0.7rem;
+  font-size: xx-small;
+}
+
+#btn-reset,
+#btn-submit {
+  width: 5.2rem;
+  height: 2.2rem;
+  margin: 0.5rem;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.basic_info{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 60% auto;
+  width: 100%;
+}
+
+#btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+#btn-reset {
+  background-color: transparent;
+  border: 1px solid var(--color-grey-200);
+  border-radius: 0;
+
+  color: var(--color-grey-200);
+}
+
+#btn-reset:hover {
+  box-shadow: 0 0 0 3px var(--color-blue-900);
+  color: var(--color-blue-900);
+
+}
+
+#btn-submit {
+  background-color: var(--color-yellow-600);
+  border: 1px solid var(--color-yellow-600);
+  border-radius: 0;
+  color: var(--color-grey-800);
+}
+#btn-submit:hover {
+  background-color: var(--color-blue-900);
+  border: 1px solid var(--color-blue-900);
+
+  color: var(--color-white-100);
+
+}
